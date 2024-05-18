@@ -1,9 +1,12 @@
 /***************** product list css *******************/
 .product_list {
+    background-color: $section_bg;
     .section_tittle {
         text-align: left !important;
 
         h2 {
+            font-size: 40px;
+            color: $text-color;
             text-transform: capitalize;
         }
 
@@ -27,11 +30,11 @@
 
         @media #{$medium_device} {
             top: -90px;
+            transition: none;
         }
 
         @media #{$tab} {
-            bottom: 30px;
-            transition: none;
+            top: -60px;
         }
 
         .owl-prev,
@@ -73,7 +76,7 @@
     }
 }
 .single_product_item {
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 20px;
     @include transform_time(0.5s);
     img{
@@ -85,7 +88,7 @@
         }
     }
     .single_product_text {
-        padding: 32px 0;
+        padding: 32px 10px;
         background-color: $white_color;
         @include transform_time(0.5s);
 

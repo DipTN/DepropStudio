@@ -1,5 +1,6 @@
 /**************** banner part css start ****************/
 .banner_part{
+    margin-bottom: 10px;
     position: relative;
     background-color: $section_bg;
     overflow: hidden;
@@ -24,6 +25,7 @@
                 font-weight: 700;
                 margin-bottom: 35px;
                 line-height: 72px;
+                color: $title-color;
                 @media #{$small_mobile}{
                     font-size: 25px;
                     margin-bottom: 15px;
@@ -51,7 +53,8 @@
             p{
                 font-size: 15px;
                 line-height: 1.8;
-                font-family: $font_stack_2; 
+                font-family: $font_stack_2;
+                color: $title-color;
                 margin-bottom: 70px;
                 padding-right: 80px;
                 @media #{$tab}{
@@ -83,44 +86,27 @@
 
         @media #{$tab} {
             bottom: 30px;
-            transition: none;
         }
 
         .owl-prev,
         .owl-next {
             font-size: 7px;
+            border: 2px solid $white-color;
             border-radius: 50% !important;
-            background-color: #cde8eb;
-            color: black;
-            border: none !important;
+            background-color: transparent;
+            color: $white-color;
             padding: 10px 10px !important;
-            -webkit-transition: background-color 1s, color 1s, -webkit-transform 0.5s;
-            transition: background-color 1s, transform 0.5s;
 
             @media #{$medium_device} {
-                -webkit-transition: none;
-                transition: none;
             }
 
-            @media #{$tab} {
-                
+            @media #{$tab} {  
             }
         }
 
         .owl-prev:hover, .owl-next:hover{
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: $white-color;
             color: black;
-            box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
-            
-            
-        }
-
-        .owl-prev:hover {
-            -webkit-transform: translateX(-3px);
-        }
-
-        .owl-next:hover {
-            -webkit-transform: translateX(3px);
         }
     }
     .btn_2{
@@ -134,7 +120,7 @@
     .slider-counter{
         font-size: 100px;
         font-weight: 700;
-        color: #cde8eb;
+        color: $white_color;
         position: absolute;
         right: -16%;
         top: 38%;

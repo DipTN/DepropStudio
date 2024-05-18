@@ -1,11 +1,18 @@
 /**************** service_part css start ****************/
 .feature_part {
+  margin-bottom: 10px;
+  .section_tittle h2 {
+    width: 100%;
+    font-size: 48px;
+  }
+
   .single_feature_post_text {
     padding: 50px;
     background-color: $color_1;
     margin-bottom: 30px;
     position: relative;
     height: 400px;
+    border-radius: 10px;
 
     @media #{$small_mobile} {
       padding: 35px 20px;
@@ -22,6 +29,8 @@
     }
 
     @media #{$medium_device} {}
+
+    
 
     p {
       line-height: 13px;

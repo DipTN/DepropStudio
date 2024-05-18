@@ -1,14 +1,16 @@
 /**************menu part start*****************/
 .main_menu {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 999;
+	background-color: rgba(5, 5, 5, .97);
 
 	.navbar-brand {
 		padding-top: 0rem;
 		padding-bottom: 0px;
+		max-width: 80px;
 	}
 
 	.navbar {
@@ -20,14 +22,14 @@
 			li .nav-link {
 				color: $menu-color;
 				font-size: 15px;
-				padding: 36px 23px;
+				padding: 25px 23px;
 				font-family: $font_stack_1;
 				text-transform: capitalize;
 				line-height: 12px;
 				font-weight: 400;
 
 				&:hover {
-					color: $black_color;
+					color: $white-color;
 				}
 
 				@media #{$medium_device} {
@@ -39,7 +41,7 @@
 
 	#search_1 {
 		i {
-			color: $black_color;
+			color: $white-color;
 		}
 	}
 
@@ -55,10 +57,10 @@
 		max-width: 1140px;
 		z-index: 999;
 		text-align: center;
-		background: $btn_bg;
+		background: $white-color;
 
 		::placeholder {
-			color: #fff;
+			color: $black_color;
 		}
 
 		@media #{$tab} {
@@ -70,7 +72,7 @@
 	#search_input_box .form-control {
 		background: transparent;
 		border: 0;
-		color: #ffffff;
+		color: $black_color;
 		font-weight: 400;
 		font-size: 15px;
 		padding: 0;
@@ -84,7 +86,7 @@
 	}
 
 	#search_input_box .ti-close {
-		color: #fff;
+		color: #000000;
 		font-weight: 600;
 		cursor: pointer;
 		padding: 10px;
@@ -122,7 +124,7 @@
 		}
 	
 		i {
-			color: $black_color;
+			color: $white-color;
 			position: relative;
 			z-index: 1;
 			font-size: 15px;
@@ -130,7 +132,7 @@
 			&:after {
 				position: absolute;
 				border-radius: 50%;
-				background-color: rgb(241, 61, 128);
+				background-color: #71cd14;
 				width: 14px;
 				height: 14px;
 				right: -8px;
@@ -203,11 +205,16 @@
 		text-align: left !important;
 
 		.nav-item {
-			padding: 10px 15px !important;
+			padding: 15px 15px !important;
+			background-color: rgb(29, 29, 31);
+			border-style: solid;
+			border-width: 1px;
+			border-bottom-color: #797979;
 
 			.nav-link {
-				padding: 5px 15px !important;
-				color: $black_color;
+				padding: 8px 15px !important;
+				color: $white-color;
+				
 			}
 		}
 	}
@@ -260,7 +267,7 @@
 
 	.menu_icon{
 		i{
-			color: $black_color;
+			color: $white-color;
 			
 		}
 	}
