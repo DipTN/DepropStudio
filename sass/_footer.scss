@@ -31,7 +31,10 @@
 	
 		@media #{$tab_device} {
 			padding: 0px;
-	}
+		}
+		.nav-brand{
+			max-width: 150px;
+		}
 	}
 
 
