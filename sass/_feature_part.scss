@@ -1,5 +1,6 @@
 /**************** service_part css start ****************/
 .feature_part {
+  background-color:rgb(248, 236, 221);
   .section_tittle {
     margin-top: 70px;
     h2 {
@@ -18,14 +19,6 @@
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-
-    @media #{$medium_device} {
-        bottom: 20px;
-    }
-
-    @media #{$tab} {
-        bottom: 30px;
-    }
 
     .owl-prev,
     .owl-next {
@@ -53,7 +46,7 @@
     margin-right: 10px;
     margin-left: 10px;
     padding: 30px;
-    background-color: $black_color;
+    background: $black_color;
     border-radius: 18px;
 
     @media #{$small_mobile} {

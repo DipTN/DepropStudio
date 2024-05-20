@@ -1977,6 +1977,9 @@ ul {
 
 /**************** hero part css end ****************/
 /**************** service_part css start ****************/
+.feature_part {
+  background-color: rgb(248, 236, 221);
+}
 .feature_part .section_tittle {
   margin-top: 70px;
 }
@@ -1998,16 +2001,6 @@ ul {
   justify-content: center;
   gap: 20px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .feature_part .owl-nav {
-    bottom: 20px;
-  }
-}
-@media (max-width: 991px) {
-  .feature_part .owl-nav {
-    bottom: 30px;
-  }
-}
 .feature_part .owl-nav .owl-prev,
 .feature_part .owl-nav .owl-next {
   font-size: 7px;
@@ -2025,7 +2018,7 @@ ul {
   margin-right: 10px;
   margin-left: 10px;
   padding: 30px;
-  background-color: #000;
+  background: #000;
   border-radius: 18px;
 }
 @media (max-width: 576px) {
@@ -2152,47 +2145,34 @@ ul {
   position: absolute;
   right: 0;
   top: -120px;
+  padding-bottom: 70px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .product_list .owl-nav {
-    top: -90px;
-    transition: none;
+    top: -100px;
   }
 }
 @media (max-width: 991px) {
   .product_list .owl-nav {
-    top: -60px;
+    top: -100px;
   }
 }
 .product_list .owl-nav .owl-prev,
 .product_list .owl-nav .owl-next {
   font-size: 7px;
+  border: 2px solid #fff;
   border-radius: 50% !important;
-  background-color: #ffffff;
-  color: black;
-  border: none !important;
+  background-color: transparent;
+  color: #fff;
   padding: 10px 10px !important;
-  transition: background-color 1s, transform 0.5s;
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .product_list .owl-nav .owl-prev,
-  .product_list .owl-nav .owl-next {
-    transition: none;
-  }
 }
 .product_list .owl-nav .owl-prev:hover, .product_list .owl-nav .owl-next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-  box-shadow: 0px 10px 20px 0px rgba(0, 23, 51, 0.09);
-}
-.product_list .owl-nav .owl-prev:hover {
-  -webkit-transform: translateX(-3px);
-}
-.product_list .owl-nav .owl-next:hover {
-  -webkit-transform: translateX(3px);
+  background-color: #fff;
+  color: #000;
 }
 
 .single_product_item {
