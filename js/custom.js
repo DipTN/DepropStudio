@@ -162,6 +162,29 @@
     }
   });
 
+  $('.feature_slider').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
+    nav: true,
+    navText: ["<span><i class='fa fa-arrow-right fa-3x'></i></span>", "<span><i class='fa fa-arrow-left fa-3x'></i></span>"],
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        nav: true
+      },
+      600: {
+        nav: true
+      },
+      768: {
+        nav: true
+      }
+    }
+  });
+
 
 
   // niceSelect js code

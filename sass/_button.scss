@@ -55,12 +55,10 @@
 	}
 }
 .btn_2{
-	display: inline-block;
-	width: 180px;
-	height: 60px;
-	line-height: 60px;
+	padding: 12px 40px;
+	line-height: 24px;
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 30px;
 	background-color: $btn_bg;
 	@extend %custom_btn_bg_1;
 	font-size: 15px;
@@ -72,16 +70,14 @@
     transition: all .4s ease-in-out;
 	text-transform: capitalize;
 	background-size: 200% auto;
-	text-transform: uppercase;
 	box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
 	&:hover{
 		color: $white_color !important;
 		background-position: right center;
 	}
 	@media #{$tab}{
-		height: 50px;
-		width: 140px;
-		line-height: 50px;
+		padding: 12px 30px;
+		line-height: 24px;
 	}
 	@media #{$medium_device}{
 	

@@ -21,23 +21,27 @@ input:focus {
     background-color: $section_bg;
 }
 
+.section_margin {
+    margin-bottom: 10px;
+}
+
 .section_padding {
-    padding: 140px 0px;
+    padding-bottom: 140px;
 
     @media #{$medium_device} {
-        padding: 100px 0px;
+        padding-bottom: 100px;
     }
 
     @media #{$tab_device} {
-        padding: 70px 0px;
+        padding-bottom: 70px;
     }
 
     @media #{$small_mobile} {
-        padding: 70px 0px;
+        padding-bottom: 70px;
     }
 
     @media #{$large_mobile} {
-        padding: 70px 0px;
+        padding-bottom: 70px;
     }
 }
 
@@ -161,14 +165,14 @@ button:focus,
 }
 
 .section_tittle {
-    margin-bottom: 80px;
+    margin: 70px 0px;
 
     @media #{$tab} {
-        margin-bottom: 20px;
+        margin: 40px 0px;
     }
 
     @media #{$medium_device} {
-        margin-bottom: 40px;
+        margin: 40px 0px;
     }
 
     h2 {

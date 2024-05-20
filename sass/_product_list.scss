@@ -3,7 +3,6 @@
     background-color: $section_bg;
     .section_tittle {
         text-align: left !important;
-
         h2 {
             font-size: 40px;
             color: $text-color;
@@ -16,6 +15,10 @@
             font-weight: 700;
             margin-left: 60px;
         }
+    }
+
+    .product_list_slider {
+        padding-bottom: 70px;
     }
 
     

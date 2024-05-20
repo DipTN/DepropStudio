@@ -10,7 +10,7 @@
 	.navbar-brand {
 		padding-top: 0rem;
 		padding-bottom: 0px;
-		max-width: 80px;
+		width: 80px;
 	}
 
 	.navbar {
@@ -250,13 +250,14 @@
 	}
 
 	.navbar-brand img {
-		max-width: 90px;
-		margin: 0 auto;
+		max-width: 70px;
+		margin: auto;
 		position: absolute;
+		bottom: 0;
 		left: 0;
 		right: 0;
-		display: inline-block;
 		top: 0;
+		display: inline-block;
 	}
 
 	.navbar-light .navbar-toggler {
